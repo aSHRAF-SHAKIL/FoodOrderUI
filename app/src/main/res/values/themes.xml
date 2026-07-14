@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground" >@color/ThirdCardSecond</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/vector_bell</item>
+        <item name="postSplashScreenTheme">@style/Theme.App.SplashScreen</item>
+    </style>
+
+    <style name="Theme.Food" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
