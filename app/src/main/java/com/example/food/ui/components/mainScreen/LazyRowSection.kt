@@ -1,4 +1,4 @@
-package com.example.food.ui_pack.components
+package com.example.food.ui.components.mainScreen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background

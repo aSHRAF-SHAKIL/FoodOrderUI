@@ -1,4 +1,4 @@
-package com.example.food.ui_pack.screens
+package com.example.food.ui.screens
 
 import FoodPopResource
 import androidx.compose.foundation.background
@@ -16,10 +16,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.food.ui.theme.BackgroundColor
-import com.example.food.ui_pack.components.BottomNavBar
-import com.example.food.ui_pack.components.CategoryLazyRow
-import com.example.food.ui_pack.components.FoodLazyResource
-import com.example.food.ui_pack.components.HomeTitle
+import com.example.food.ui.components.mainScreen.BottomNavBar
+import com.example.food.ui.components.mainScreen.CategoryLazyRow
+import com.example.food.ui.components.mainScreen.FoodLazyResource
+import com.example.food.ui.components.mainScreen.HomeTitle
 
 @Composable
 fun MainScreen() {

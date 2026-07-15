@@ -1,4 +1,4 @@
-package com.example.food.model
+package com.example.food.data.model
 
 data class FoodItem(
     val name: String,
