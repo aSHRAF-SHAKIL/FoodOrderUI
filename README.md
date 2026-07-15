@@ -23,25 +23,74 @@ The project currently includes:
 ```text
 app/
 │
-├── ui/
-│   └── theme/
-│
-├── ui_pack/
-│   ├── components/
-│   │   ├── BottomNavBar.kt
-│   │   ├── CategoryLazyRow.kt
-│   │   ├── FoodLazyResource.kt
-│   │   ├── HomeTitle.kt
-│   │   └── ...
+├── data/
+│   ├── model/
+│   │   ├── Category.kt
+│   │   ├── Product.kt
+│   │   ├── User.kt
+│   │   ├── CartItem.kt
+│   │   ├── Order.kt
+│   │   └── OrderItem.kt
 │   │
-│   └── screens/
-│       └── MainScreen.kt
+│   ├── remote/
+│   │
+│   └── repository/
+│
+├── ui/
+│   ├── theme/
+│   │   ├── Color.kt
+│   │   ├── Theme.kt
+│   │   └── Type.kt
+│   │
+│   ├── navigation/
+│   │
+│   ├── screens/
+│   │   ├── HomeScreen.kt
+│   │   ├── ProductDetailsScreen.kt
+│   │   ├── CartScreen.kt
+│   │   ├── CheckoutScreen.kt
+│   │   ├── ProfileScreen.kt
+│   │   ├── EditProfileScreen.kt
+│   │   ├── OrderHistoryScreen.kt
+│   │   ├── SearchScreen.kt
+│   │   ├── SettingsScreen.kt
+│   │   └── ThemeScreen.kt
+│   │
+│   └── components/
+│       ├── ProductCard.kt
+│       ├── CategoryChip.kt
+│       ├── SearchBar.kt
+│       ├── ProfileHeader.kt
+│       ├── ProfileMenuItem.kt
+│       ├── ThemeOption.kt
+│       ├── ThemePreviewCard.kt
+│       ├── LoadingIndicator.kt
+│       ├── ErrorView.kt
+│       └── EmptyState.kt
+│
+├── viewmodel/
+│   ├── HomeViewModel.kt
+│   ├── ProductViewModel.kt
+│   ├── CartViewModel.kt
+│   ├── ProfileViewModel.kt
+│   ├── OrderViewModel.kt
+│   └── SettingsViewModel.kt
+│
+├── utils/
 │
 └── MainActivity.kt
 ```
 
----
+### Architecture
 
+The application follows the **MVVM (Model–View–ViewModel)** architecture to keep the codebase modular, maintainable, and scalable.
+
+- **data/** – Models, repositories, and remote data sources (Firebase).
+- **ui/** – Screens, reusable Jetpack Compose components, navigation, and application theme.
+- **viewmodel/** – Handles UI state and business logic.
+- **utils/** – Shared utilities, constants, extensions, and helper classes.
+
+This structure is designed to support future integration with Firebase Authentication, Cloud Firestore, Firebase Storage, and other modern Android development tools while maintaining a clean separation of responsibilities.
 ## Home Screen
 
 The current home screen contains:
