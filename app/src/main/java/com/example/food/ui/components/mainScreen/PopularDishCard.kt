@@ -1,3 +1,5 @@
+package com.example.food.ui.components.mainScreen
+
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items

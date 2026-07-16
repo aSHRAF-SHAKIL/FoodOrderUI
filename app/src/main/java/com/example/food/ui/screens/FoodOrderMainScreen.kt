@@ -1,6 +1,6 @@
 package com.example.food.ui.screens
 
-import FoodPopResource
+import com.example.food.ui.components.mainScreen.FoodPopResource
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
